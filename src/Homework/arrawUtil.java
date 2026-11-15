@@ -1,9 +1,5 @@
 package Homework;
 
-import javax.imageio.metadata.IIOMetadataFormatImpl;
-
-import static java.lang.System.out;
-
 
 public class arrawUtil {
     public static void main(String[] args) {
@@ -13,25 +9,25 @@ public class arrawUtil {
 
         // 1. Элементы массива
         for (int number : numbers) {
-            out.print(number + " ");
+            System.out.print(number + " ");
         }
-        out.println();
-        out.println();
+        System.out.println();
+        System.out.println();
 
 
         // 2. Первый элемент массива
-        out.println("first element: " + numbers[0]);
-        out.println();
+        System.out.println("first element: " + numbers[0]);
+        System.out.println();
 
 
         // 3. Последний элемент массива
-        out.println("last element: " + numbers[numbers.length - 1]);
-        out.println();
+        System.out.println("last element: " + numbers[numbers.length - 1]);
+        System.out.println();
 
 
         // 4. Длина элементов массива
-        out.println("Array length: " + numbers.length);
-        out.println();
+        System.out.println("Array length: " + numbers.length);
+        System.out.println();
 
 
         // 5. Самое маленькое число массива
@@ -42,13 +38,13 @@ public class arrawUtil {
             }
 
         }
-        out.println("Minimum number: " + min);
-        out.println();
+        System.out.println("Minimum number: " + min);
+        System.out.println();
 
 
         // 6. Среднее число массива
-        out.println("Middle element: " + numbers[numbers.length / 2]);
-        out.println();
+        System.out.println("Middle element: " + numbers[numbers.length / 2]);
+        System.out.println();
 
 
         //7. Кол-во четных чисел в массиве
@@ -58,8 +54,8 @@ public class arrawUtil {
                 count++;
             }
         }
-        out.println("Even numbers count: " + count);
-        out.println();
+        System.out.println("Even numbers count: " + count);
+        System.out.println();
 
 
         //8. Кол-во нечетных чисел в массиве
@@ -69,9 +65,8 @@ public class arrawUtil {
                 oddCount++;
             }
         }
-        out.println("Odd numbers count: " + oddCount);
-        out.println();
-
+        System.out.println("Odd numbers count: " + oddCount);
+        System.out.println();
 
 
         // 9. Сумма чисел в находящихся в массиве
@@ -80,14 +75,14 @@ public class arrawUtil {
             sum += numbers[i];
 
         }
-        out.println("Sum: " + sum);
-        out.println();
+        System.out.println("Sum: " + sum);
+        System.out.println();
 
 
         // 10. Среднее значение элементов массива
         double average = (double) sum / numbers.length;
-        out.println("Average: " + average);
-        out.println();
+        System.out.println("Average: " + average);
+        System.out.println();
 
 
         // 1.Бонусное задание. Самое большое число массива
@@ -96,11 +91,9 @@ public class arrawUtil {
             if (numbers[i] > max) {
                 max = numbers[i];
             }
-
-
         }
-        out.println("Maximum number: " + max);
-        out.println();
+        System.out.println("Maximum number: " + max);
+        System.out.println();
 
         // 2.Бонусное задание. Кол-во положительных, отрицательных чисел и нулей.
         int positiveCount = 0;
@@ -120,10 +113,10 @@ public class arrawUtil {
         }
 
 
-        out.println("PositiveCount: " + positiveCount);
-        out.println("NegativeCount: " + negativeCount);
-        out.println("ZeroCount: " + zeroCount);
-        out.println();
+        System.out.println("PositiveCount: " + positiveCount);
+        System.out.println("NegativeCount: " + negativeCount);
+        System.out.println("ZeroCount: " + zeroCount);
+        System.out.println();
 
 
         //3. Бонусное задание. Первернутый массив.
@@ -139,7 +132,7 @@ public class arrawUtil {
             j--;
         }
         for (int number : numbers) {
-            out.print(number + " ");
+            System.out.print(number + " ");
         }
 
 
