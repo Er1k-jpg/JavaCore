@@ -1,4 +1,5 @@
 package homework;
+
 public class CharArrayUtil {
     public static void main(String[] args) {
         char[] chars = {'J', 'a', 'v', 'a', ' ', 'i', 's', ' ', 'f', 'u', 'n', '!'};
@@ -186,11 +187,16 @@ public class CharArrayUtil {
 
         boolean equal = true;
 
-        for (int i = 0; i < first.length; i++) {
-            if (first[i] == second[i]) {
-                equal = false;
+        if (first.length != second.length) {
+            equal = false;
+        } else {
+            for (int i = 0; i < first.length; i++) {
+                if (first[i] != second[i]) {
+                    equal = false;
+                }
             }
         }
+
         System.out.println("Arrays are equal: " + equal);
         System.out.println();
 
