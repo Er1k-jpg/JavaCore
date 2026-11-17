@@ -1,9 +1,5 @@
-package Homework;
-
-import javax.swing.*;
-
-
-public class charArrayUtil {
+package homework;
+public class CharArrayUtil {
     public static void main(String[] args) {
         char[] chars = {'J', 'a', 'v', 'a', ' ', 'i', 's', ' ', 'f', 'u', 'n', '!'};
         // 1. Напечатать массив.

@@ -1,10 +1,8 @@
-package Homework;
-
-import java.lang.reflect.Array;
+package homework;
 import java.util.Arrays;
-import java.util.concurrent.atomic.AtomicStampedReference;
 
-public class arraySortingHomework {
+
+public class ArraySortingHomework {
     public static void main(String[] args) {
         int[] numbers = {12, 5, 8, -3, 21, 7, 0, 15, 2, 9};
 
